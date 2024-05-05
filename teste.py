@@ -11,3 +11,4 @@ depois_barra = resto.split("(")[0].strip()
 
 print(numero_antes_barra)    # Saída: "18"
 print(depois_barra)
+print('Olá')
