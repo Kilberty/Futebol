@@ -2,7 +2,7 @@ import requests
 import oracledb
 import os
 from dotenv import load_dotenv
-temporada = 22931
+temporada = 10173
 rodadas = range(1,39)
 campeonato = 325
 Partidas = []

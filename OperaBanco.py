@@ -1,8 +1,8 @@
 
 def sql_stat_brasileiro():
     sql_insert = """
-        INSERT INTO Estaticas_Brasileiro (
-            ID_Partida, Periodo, Posse_Mandante, Posse_Visitante, ChutesTotal_Mandante,
+        INSERT INTO STATS_Brasileiro(
+            ID_Partida, Periodo, Temporada, Posse_Mandante, Posse_Visitante, ChutesTotal_Mandante,
             ChutesTotal_Visitante, ChutesAlvo_Mandante, ChutesAlvo_Visitante, ChutesFora_Mandante,
             ChutesFora_Visitante, ChutesBloqueados_Mandante, ChutesBloqueados_Visitante, Escanteios_Mandante,
             Escanteios_Visitante, Faltas_Mandante, Faltas_Visitante, Amarelo_Mandante, Amarelo_Visitante,
@@ -15,11 +15,11 @@ def sql_stat_brasileiro():
             PerdaPosse_Mandante, PerdaPosse_Visitante, DuelosGanhos_Mandante, DuelosGanhos_Visitante,
             DueloAereoVencido_Mandante, DueloAereoVencido_Visitante, Desarmes_Mandante, Desarmes_Visitante,
             Interceptacoes_Mandante, Interceptacoes_Visitante, Cortes_Mandante, Cortes_Visitante,
-            Vermelho_Mandante, Vermelho_Visitante,BolaLonga_Mandante,BolaLonga_Visitante,Cruzamento_Mandante,Cruzamento_Visitante,
+            Vermelho_Mandante, Vermelho_Visitante,BolaLonga_Mandante,BolaLonga_Visitante,Cruzamentos_Mandante,Cruzamentos_Visitante,
             Impedimento_Mandante, Impedimento_Visitante,TotalBL_Mandante,TotalBL_Visitante,CruzamentoTotal_Mandante,CruzamentoTotal_Visitante,
             DriblesTotal_Mandante, DriblesTotal_Visitante,GolContraAtaque_Mandante, GolContraAtaque_Visitante 
         ) VALUES (
-            :ID_Partida, :Periodo, :Posse_Mandante, :Posse_Visitante, :ChutesTotal_Mandante,
+            :ID_Partida, :Periodo,:Temporada,:Posse_Mandante, :Posse_Visitante, :ChutesTotal_Mandante,
             :ChutesTotal_Visitante, :ChutesAlvo_Mandante, :ChutesAlvo_Visitante, :ChutesFora_Mandante,
             :ChutesFora_Visitante, :ChutesBloqueados_Mandante, :ChutesBloqueados_Visitante, :Escanteios_Mandante,
             :Escanteios_Visitante, :Faltas_Mandante, :Faltas_Visitante, :Amarelo_Mandante, :Amarelo_Visitante,
@@ -32,7 +32,7 @@ def sql_stat_brasileiro():
             :PerdaPosse_Mandante, :PerdaPosse_Visitante, :DuelosGanhos_Mandante, :DuelosGanhos_Visitante,
             :DueloAereoVencido_Mandante, :DueloAereoVencido_Visitante, :Desarmes_Mandante, :Desarmes_Visitante,
             :Interceptacoes_Mandante, :Interceptacoes_Visitante, :Cortes_Mandante, :Cortes_Visitante,
-            :Vermelho_Mandante, :Vermelho_Visitante,:BolaLonga_Mandante,BolaLonga_Visitante,:Cruzamento_Mandante,:Cruzamento_Visitante,
+            :Vermelho_Mandante, :Vermelho_Visitante,:BolaLonga_Mandante,:BolaLonga_Visitante,:Cruzamento_Mandante,:Cruzamento_Visitante,
             :Impedimento_Mandante,:Impedimento_Visitante,:BolaLongaTotal_Mandante,:BolaLongaTotal_Visitante,
             :CruzamentosTotal_Mandante,:CruzamentosTotal_Visitante, :DriblesTotal_Mandante, :DriblesTotal_Visitante,
             :GolContraAtaque_Mandante, :GolContraAtaque_Visitante 
