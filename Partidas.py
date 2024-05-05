@@ -1,7 +1,7 @@
 import requests
 import oracledb
-
-
+import os
+from dotenv import load_dotenv
 temporada = 22931
 rodadas = range(1,39)
 campeonato = 325
@@ -9,10 +9,12 @@ Partidas = []
 
 
 
-usuario = 'ADMIN'
-senha = 'Kilberty32316943'
-dsn = 'dadosfutebol_high'
-walletpw = '32316943a'
+load_dotenv()
+usuario = os.getenv("USUARIO")
+senha = os.getenv("SENHA")
+dsn = os.getenv("DSN")
+walletpw = os.getenv("WALLET_PW")
+wallet_location = r'.\Wallet'
 
 # Especifique o diretório de configuração que contém os arquivos da wallet
 wallet_location = r'.\Wallet'
